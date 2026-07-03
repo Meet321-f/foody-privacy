@@ -3,225 +3,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for Foody - Your AI-Powered Recipe Companion">
+    <meta name="description" content="Privacy Policy for Foody">
     <title>Privacy Policy - Foody</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
-            --primary-gold: #D4AF37;
-            --dark-bg: #0D0D0D;
-            --card-bg: #1A1A1A;
-            --text-primary: #FFFFFF;
-            --text-secondary: #B0B0B0;
-            --border-color: rgba(212, 175, 55, 0.2);
-            --accent-green: #10AC84;
-            --accent-red: #EE5A6F;
+            --gold: #d4af37;
+            --bg: #0d0d0d;
+            --card: #171717;
+            --text: #ffffff;
+            --muted: #b7b7b7;
+            --border: rgba(212, 175, 55, 0.18);
+            --green: #18b57d;
         }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--dark-bg);
-            color: var(--text-primary);
-            line-height: 1.6;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: radial-gradient(circle at top, #1a1a1a 0%, var(--bg) 48%);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 24px;
         }
-        .container {
-            max-width: 850px;
-            margin: 40px auto;
-            background-color: var(--card-bg);
-            padding: 40px;
-            border-radius: 24px;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        .wrap {
+            max-width: 920px;
+            margin: 24px auto;
+            background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+        }
+        .hero {
+            padding: 40px 40px 24px;
+            background: linear-gradient(180deg, rgba(212,175,55,0.08), rgba(212,175,55,0.02));
+            border-bottom: 1px solid var(--border);
         }
         h1 {
-            color: var(--primary-gold);
-            font-size: 36px;
-            margin-bottom: 10px;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 15px;
-            text-align: center;
+            font-size: 40px;
+            color: var(--gold);
+            margin-bottom: 8px;
+            letter-spacing: -0.03em;
         }
-        .meta { text-align: center; color: var(--text-secondary); font-size: 14px; margin-bottom: 40px; }
-        h2 { color: var(--primary-gold); margin: 30px 0 15px 0; font-size: 24px; }
-        h3 { color: var(--text-primary); margin: 20px 0 10px 0; font-size: 20px; }
-        p { margin-bottom: 15px; color: var(--text-secondary); }
-        ul { margin-bottom: 20px; margin-left: 20px; }
-        li { margin-bottom: 8px; color: var(--text-secondary); }
-        a { color: var(--primary-gold); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .section { margin-bottom: 40px; }
-        .highlight-box {
-            background: rgba(212, 175, 55, 0.1);
-            border-left: 4px solid var(--primary-gold);
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
+        .meta, .lead {
+            color: var(--muted);
         }
-        .compliance-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        .compliance-table th, .compliance-table td { border: 1px solid var(--border-color); padding: 12px; text-align: left; }
-        .compliance-table th { background-color: rgba(212, 175, 55, 0.1); color: var(--primary-gold); }
+        .lead {
+            max-width: 760px;
+            margin-top: 14px;
+        }
+        .content {
+            padding: 34px 40px 40px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: var(--gold);
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+        h3 {
+            color: var(--text);
+            font-size: 18px;
+            margin: 18px 0 10px;
+        }
+        p {
+            color: var(--muted);
+            margin-bottom: 12px;
+        }
+        ul {
+            margin: 10px 0 16px 22px;
+        }
+        li {
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 18px 20px;
+            margin-top: 14px;
+        }
+        .notice {
+            background: rgba(24, 181, 125, 0.08);
+            border-left: 4px solid var(--green);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            overflow: hidden;
+            border-radius: 14px;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 12px 14px;
+            text-align: left;
+            color: var(--muted);
+            vertical-align: top;
+        }
+        th {
+            color: var(--gold);
+            background: rgba(212, 175, 55, 0.08);
+        }
+        a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         .footer {
-            margin-top: 60px;
-            text-align: center;
-            font-size: 14px;
-            color: var(--text-secondary);
-            border-top: 1px solid var(--border-color);
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
             padding-top: 20px;
+            color: #8f8f8f;
+            font-size: 14px;
+            text-align: center;
         }
-        @media (max-width: 600px) {
-            .container { padding: 20px; margin: 10px auto; }
-            h1 { font-size: 28px; }
-            h2 { font-size: 20px; }
+        @media (max-width: 700px) {
+            body { padding: 12px; }
+            .hero, .content { padding: 22px 18px; }
+            h1 { font-size: 30px; }
+            h2 { font-size: 21px; }
         }
     </style>
 </head>
 <body>
+    <div class="wrap">
+        <div class="hero">
+            <h1>Privacy Policy</h1>
+            <p class="meta"><strong>App:</strong> Foody</p>
+            <p class="meta"><strong>Effective Date:</strong> July 3, 2026</p>
+            <p class="lead">
+                This Privacy Policy explains how Foody collects, uses, stores, and protects information when you use the app,
+                including account features, AI recipe generation, recipe sharing, favorites, comments, reports, and feedback tools.
+            </p>
+        </div>
 
-<div class="container">
-    <h1>Privacy Policy - Foody</h1>
-    <p class="meta"><strong>Effective Date:</strong> February 12, 2026</p>
+        <div class="content">
+            <section>
+                <h2>1. Who We Are</h2>
+                <p>
+                    Foody is a recipe and food discovery app that lets users browse meals, save favorites, generate AI recipes,
+                    share their own recipes, comment on recipes, report content, and send feedback.
+                </p>
+            </section>
 
-    <div class="section">
-        <h2>1. Introduction</h2>
-        <p>Foody ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use the Foody mobile application.</p>
-        <p>By using Foody, you agree to the practices described in this policy.</p>
-    </div>
+            <section>
+                <h2>2. Information We Collect</h2>
 
-    <div class="section">
-        <h2>2. Eligibility & Children's Privacy</h2>
-        <p>Foody is intended for users aged 13 years and older. We do not knowingly collect personal data from children under 13.</p>
-        <p>If we discover that a user is under 13, we will immediately delete their account and associated data. Parents should contact us at <strong>meet321.dev@gmail.com</strong> if they believe their child's data has been collected.</p>
-    </div>
+                <h3>Information you provide directly</h3>
+                <ul>
+                    <li>Name, email address, and profile photo when you sign in or update your profile.</li>
+                    <li>Recipe prompts you type for AI recipe suggestions and AI recipe generation.</li>
+                    <li>Recipes you create and share, including title, description, ingredients, steps, image, servings, and diet type.</li>
+                    <li>Comments you post on recipes.</li>
+                    <li>Recipe reports you submit, including the reason for the report.</li>
+                    <li>Feedback you send, including rating, message, feedback type, and optional name.</li>
+                </ul>
 
-    <div class="section">
-        <h2>3. Information We Collect</h2>
-        
-        <h3>Information You Provide</h3>
-        <ul>
-            <li>Name and Email address for account creation</li>
-            <li>Profile information and images</li>
-            <li>Cooking preferences and dietary requirements</li>
-            <li>Recipes and content you generate using AI</li>
-        </ul>
+                <h3>Information collected automatically</h3>
+                <ul>
+                    <li>Basic account identifiers from Firebase Authentication, such as your user ID.</li>
+                    <li>App activity related to favorites, AI recipe history, and profile sync.</li>
+                    <li>Technical and diagnostic information such as error logs and service failures.</li>
+                    <li>Notification permission status when Foody asks to send AI recipe ready notifications.</li>
+                </ul>
 
-        <h3>Information Collected Automatically</h3>
-        <ul>
-            <li>Device type, model, and OS version</li>
-            <li>App usage statistics and feature interactions</li>
-            <li>Crash logs and diagnostic reports</li>
-            <li>IP address for security and analytics</li>
-        </ul>
+                <div class="card notice">
+                    <h3>Foody does not ask for unnecessary personal data</h3>
+                    <ul>
+                        <li>No precise GPS location collection.</li>
+                        <li>No payment card or banking information collection inside the app.</li>
+                        <li>No contact list or address book collection.</li>
+                        <li>No health record or biometric data collection.</li>
+                    </ul>
+                </div>
+            </section>
 
-        <div class="highlight-box">
-            <h3>We Do NOT Collect</h3>
-            <ul>
-                <li>Location data (GPS or precise location)</li>
-                <li>Payment or credit card information</li>
-                <li>Contacts or address book data</li>
-                <li>Health records or biometric data</li>
-            </ul>
+            <section>
+                <h2>3. Permissions We Request</h2>
+                <ul>
+                    <li><strong>Photo library / media access:</strong> to let you choose profile photos or recipe images from your device.</li>
+                    <li><strong>Notifications:</strong> to send optional alerts when an AI recipe is ready.</li>
+                    <li><strong>Haptics / vibration:</strong> to provide in-app feedback on supported devices.</li>
+                </ul>
+                <p>You can manage these permissions from your device settings.</p>
+            </section>
+
+            <section>
+                <h2>4. How We Use Your Information</h2>
+                <ul>
+                    <li>To create, maintain, and secure your Foody account.</li>
+                    <li>To sync your profile details across supported app features.</li>
+                    <li>To generate AI recipe suggestions and full AI recipes from your prompts.</li>
+                    <li>To save your favorites and AI recipe history.</li>
+                    <li>To publish user-submitted recipes and support community features such as comments and reports.</li>
+                    <li>To review feedback, improve reliability, and fix bugs.</li>
+                    <li>To protect the app, investigate misuse, and moderate harmful or abusive content.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>5. Where Your Data Is Stored</h2>
+                <ul>
+                    <li><strong>Firebase Authentication:</strong> used for sign-in and account identity.</li>
+                    <li><strong>Firebase Firestore:</strong> used for cloud data such as profiles, recipes, comments, reports, and feedback.</li>
+                    <li><strong>Local device storage:</strong> Foody stores some data on your device using SQLite and AsyncStorage for profile data, cached content, favorites, onboarding status, and AI history.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>6. Third-Party Services</h2>
+                <p>Foody relies on third-party services to operate core features.</p>
+                <ul>
+                    <li><strong>Google Sign-In:</strong> used when you sign in with Google and share approved profile details such as your name, email, and profile photo.</li>
+                    <li><strong>Firebase:</strong> used for authentication, cloud database, and cloud functions.</li>
+                    <li><strong>OpenRouter via backend function:</strong> used to process AI recipe prompts and generate AI recipe results.</li>
+                    <li><strong>TheMealDB:</strong> used for public meal search and meal detail content.</li>
+                </ul>
+                <p>
+                    These providers operate under their own privacy terms. Foody only uses them to deliver app features and does not sell your personal data.
+                </p>
+            </section>
+
+            <section>
+                <h2>7. AI Features</h2>
+                <p>
+                    When you use Foody AI, the recipe prompt or ingredient request you enter is sent through Foody's backend service to generate recipe suggestions or a full recipe.
+                    AI output may be inaccurate, incomplete, or unsuitable for allergies or dietary needs, so you should review recipes before using them.
+                </p>
+            </section>
+
+            <section>
+                <h2>8. Sharing and Community Features</h2>
+                <p>
+                    If you choose to share a recipe publicly, other users may be able to view details such as the recipe content, your display name, and profile image associated with that recipe.
+                    Comments and reports may also be stored with your user ID and display name for moderation and community safety.
+                </p>
+            </section>
+
+            <section>
+                <h2>9. Data Retention</h2>
+                <p>We keep information for as long as it is needed to provide the app and operate core features.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data type</th>
+                            <th>How long it may be kept</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Account and profile data</td>
+                            <td>While your account remains active, unless earlier removal is required.</td>
+                        </tr>
+                        <tr>
+                            <td>Shared recipes, comments, reports, and feedback</td>
+                            <td>For as long as needed to provide the feature, maintain records, or review abuse and safety issues.</td>
+                        </tr>
+                        <tr>
+                            <td>Local device cache, favorites, and AI history</td>
+                            <td>Until removed by the app, deleted by you, or cleared from your device.</td>
+                        </tr>
+                        <tr>
+                            <td>Diagnostic logs</td>
+                            <td>Only as long as reasonably needed for troubleshooting and service protection.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>10. Account Deletion and Your Choices</h2>
+                <p>
+                    You can delete your account from the app's settings screen. Deleting your account removes your authentication access,
+                    but some related records may remain for limited operational, moderation, legal, or security reasons where allowed by law.
+                </p>
+                <p>
+                    You can also control app permissions, stop using community features, or contact us if you want help regarding your data.
+                </p>
+            </section>
+
+            <section>
+                <h2>11. Data Security</h2>
+                <p>
+                    Foody uses reasonable technical and organizational safeguards designed to protect information in transit and at rest.
+                    However, no app or online service can guarantee absolute security.
+                </p>
+            </section>
+
+            <section>
+                <h2>12. Children's Privacy</h2>
+                <p>
+                    Foody is not intended for children under 13. If you believe a child has provided personal information through the app,
+                    please contact us so we can review and take appropriate action.
+                </p>
+            </section>
+
+            <section>
+                <h2>13. Your Rights and Contact</h2>
+                <p>
+                    Depending on your location, you may have rights to request access, correction, or deletion of personal information.
+                    For privacy questions or support, contact:
+                </p>
+                <div class="card">
+                    <p><strong>Email:</strong> <a href="mailto:meettailor.dev@gmail.com">meettailor.dev@gmail.com</a></p>
+                    <p><strong>App:</strong> Foody</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>14. Changes to This Policy</h2>
+                <p>
+                    We may update this Privacy Policy from time to time. The updated version will be posted with a revised effective date.
+                    Continued use of Foody after changes become effective means the updated policy applies.
+                </p>
+            </section>
+
+            <div class="footer">
+                <p>&copy; 2026 Foody. All rights reserved.</p>
+            </div>
         </div>
     </div>
-
-    <div class="section">
-        <h2>4. Permissions We Request</h2>
-        <p>To provide all features, our app may request the following permissions:</p>
-        <ul>
-            <li><strong>Camera:</strong> To take photos for profile pictures or recipe images.</li>
-            <li><strong>Photo Library:</strong> To select and upload existing photos from your device.</li>
-            <li><strong>Vibration:</strong> For haptic feedback and user experience improvements.</li>
-        </ul>
-        <p>You can manage these permissions at any time via your device settings.</p>
-    </div>
-
-    <div class="section">
-        <h2>5. How We Use Your Information</h2>
-        <ul>
-            <li>To create, manage, and secure your user account.</li>
-            <li>To generate personalized AI-powered recipes and images.</li>
-            <li>To improve App functionality, performance, and user interface.</li>
-            <li>To provide customer support and respond to inquiries.</li>
-            <li>To ensure App safety and prevent fraudulent activity.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>6. Third-Party Services (AI & Infrastructure)</h2>
-        <p>Foody uses trusted third-party services to provide core functionality:</p>
-        <ul>
-            <li><strong>Clerk:</strong> For secure user authentication. (<a href="https://clerk.com/privacy" target="_blank">Privacy Policy</a>)</li>
-            <li><strong>OpenRouter:</strong> For AI recipe generation. (<a href="https://openrouter.ai/privacy" target="_blank">Privacy Policy</a>)</li>
-            <li><strong>AIGurulab:</strong> For intelligent image generation.</li>
-            <li><strong>TheMealDB:</strong> Public community database for recipe data.</li>
-        </ul>
-        <p>Your personal identifying information (like your email) is <strong>never</strong> shared with AI text/image providers.</p>
-    </div>
-
-    <div class="section">
-        <h2>7. Data Retention & Deletion</h2>
-        <p>We retain data only as long as necessary for the purposes outlined in this policy.</p>
-        <table class="compliance-table">
-            <thead>
-                <tr>
-                    <th>Data Type</th>
-                    <th>Retention Period</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Active Account Data</td>
-                    <td>While account is active</td>
-                </tr>
-                <tr>
-                    <td>Deleted Account Data</td>
-                    <td>Deleted within 30 days of request</td>
-                </tr>
-                <tr>
-                    <td>Crash Logs</td>
-                    <td>Stored for 90 days</td>
-                </tr>
-            </tbody>
-        </table>
-        <p>You may request deletion of your account at any time through the App settings. All personal data will be purged within 30 days of deletion.</p>
-    </div>
-
-    <div class="section">
-        <h2>8. Data Security</h2>
-        <p>We use HTTPS/TLS encryption for all data in transit and follow industry-standard secure storage methods to protect your information. However, please be aware that no transmission method over the internet is 100% secure.</p>
-    </div>
-
-    <div class="section">
-        <h2>9. Data Safety Declaration (Google Play)</h2>
-        <p>In accordance with Google Play's Data Safety requirements:</p>
-        <ul>
-            <li><strong>Data Encrypted:</strong> Yes, data is encrypted in transit using HTTPS.</li>
-            <li><strong>Data Sharing:</strong> Data is shared only with functional service providers (Identity, AI), not for advertising.</li>
-            <li><strong>User Control:</strong> You can request data deletion directly within the App.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>10. Your Rights</h2>
-        <p>You have the right to access, correct, or delete your personal data. You may also withdraw your consent for data processing by deleting your account.</p>
-        <p>To exercise these rights or for any questions, contact us at: <strong>meet321.dev@gmail.com</strong></p>
-    </div>
-
-    <div class="section">
-        <h2>11. Legal Jurisdiction</h2>
-        <p>This Privacy Policy is governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts of India.</p>
-    </div>
-
-    <div class="section">
-        <h2>12. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy periodically. Continued use of the app after an update constitutes acceptance of the new terms.</p>
-    </div>
-
-    <div class="footer">
-        <p>© 2026 Foody. All Rights Reserved.</p>
-        <p>Developed by Foody Development Team | India</p>
-    </div>
-
-</div>
-
 </body>
 </html>
