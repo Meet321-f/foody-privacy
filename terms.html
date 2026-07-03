@@ -3,220 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Terms and Conditions for Foody - Your AI-Powered Recipe Companion">
+    <meta name="description" content="Terms and Conditions for Foody">
     <title>Terms and Conditions - Foody</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
-            --primary-gold: #D4AF37;
-            --dark-bg: #0D0D0D;
-            --card-bg: #1A1A1A;
-            --text-primary: #FFFFFF;
-            --text-secondary: #B0B0B0;
-            --border-color: rgba(212, 175, 55, 0.2);
-            --accent-green: #10AC84;
-            --accent-red: #EE5A6F;
+            --gold: #d4af37;
+            --bg: #0d0d0d;
+            --panel: #171717;
+            --text: #ffffff;
+            --muted: #b7b7b7;
+            --border: rgba(212, 175, 55, 0.18);
+            --red: #ee5a6f;
         }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--dark-bg);
-            color: var(--text-primary);
-            line-height: 1.6;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: radial-gradient(circle at top, #1a1a1a 0%, var(--bg) 48%);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 24px;
         }
-
-        .container {
-            max-width: 850px;
-            margin: 40px auto;
-            background-color: var(--card-bg);
-            padding: 40px;
-            border-radius: 24px;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        .wrap {
+            max-width: 920px;
+            margin: 24px auto;
+            background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
         }
-
+        .hero {
+            padding: 40px 40px 24px;
+            background: linear-gradient(180deg, rgba(212,175,55,0.08), rgba(212,175,55,0.02));
+            border-bottom: 1px solid var(--border);
+        }
         h1 {
-            color: var(--primary-gold);
-            font-size: 36px;
-            margin-bottom: 10px;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 15px;
-            text-align: center;
-        }
-
-        .meta {
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 14px;
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            color: var(--primary-gold);
-            margin: 30px 0 15px 0;
-            font-size: 24px;
-        }
-
-        h3 {
-            color: var(--text-primary);
-            margin: 20px 0 10px 0;
-            font-size: 20px;
-        }
-
-        p {
-            margin-bottom: 15px;
-            color: var(--text-secondary);
-        }
-
-        ul, ol {
-            margin-bottom: 20px;
-            margin-left: 20px;
-        }
-
-        li {
+            font-size: 40px;
+            color: var(--gold);
             margin-bottom: 8px;
-            color: var(--text-secondary);
+            letter-spacing: -0.03em;
         }
-
-        a {
-            color: var(--primary-gold);
-            text-decoration: none;
+        .meta, .lead { color: var(--muted); }
+        .lead { max-width: 760px; margin-top: 14px; }
+        .content { padding: 34px 40px 40px; }
+        section { margin-bottom: 30px; }
+        h2 { color: var(--gold); font-size: 24px; margin-bottom: 12px; }
+        h3 { color: var(--text); font-size: 18px; margin: 18px 0 10px; }
+        p { color: var(--muted); margin-bottom: 12px; }
+        ul { margin: 10px 0 16px 22px; }
+        li { color: var(--muted); margin-bottom: 8px; }
+        .card {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 18px 20px;
+            margin-top: 14px;
         }
-
-        a:hover {
-            text-decoration: underline;
+        .warning {
+            background: rgba(238, 90, 111, 0.08);
+            border-left: 4px solid var(--red);
         }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .disclaimer-box {
-            background: rgba(238, 90, 111, 0.1);
-            border-left: 4px solid var(--accent-red);
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-        }
-
-        .disclaimer-box h3 {
-            color: var(--accent-red);
-            margin-top: 0;
-        }
-
+        a { color: var(--gold); text-decoration: none; }
+        a:hover { text-decoration: underline; }
         .footer {
-            margin-top: 60px;
-            text-align: center;
-            font-size: 14px;
-            color: var(--text-secondary);
-            border-top: 1px solid var(--border-color);
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
             padding-top: 20px;
+            color: #8f8f8f;
+            font-size: 14px;
+            text-align: center;
         }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-                margin: 10px auto;
-            }
-            h1 { font-size: 28px; }
-            h2 { font-size: 20px; }
+        @media (max-width: 700px) {
+            body { padding: 12px; }
+            .hero, .content { padding: 22px 18px; }
+            h1 { font-size: 30px; }
+            h2 { font-size: 21px; }
         }
     </style>
 </head>
 <body>
+    <div class="wrap">
+        <div class="hero">
+            <h1>Terms and Conditions</h1>
+            <p class="meta"><strong>App:</strong> Foody</p>
+            <p class="meta"><strong>Effective Date:</strong> July 3, 2026</p>
+            <p class="lead">
+                These Terms and Conditions apply to your use of Foody, including account features, saved favorites,
+                AI recipe generation, recipe browsing, recipe sharing, comments, reports, and feedback tools.
+            </p>
+        </div>
 
-<div class="container">
-    <h1>Terms and Conditions - Foody</h1>
-    <p class="meta"><strong>Effective Date:</strong> February 12, 2026</p>
+        <div class="content">
+            <section>
+                <h2>1. Acceptance of Terms</h2>
+                <p>
+                    By accessing or using Foody, you agree to these Terms and Conditions. If you do not agree,
+                    you should not use the app.
+                </p>
+            </section>
 
-    <div class="section">
-        <h2>1. Agreement to Terms</h2>
-        <p>By accessing or using the Foody mobile application ("App"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
-    </div>
+            <section>
+                <h2>2. Accounts and Eligibility</h2>
+                <ul>
+                    <li>You are responsible for keeping your sign-in access secure and your account details accurate.</li>
+                    <li>Some Foody features may require an account, including favorites, AI history, recipe sharing, comments, reports, and feedback.</li>
+                    <li>You must not impersonate another person or use Foody in a misleading or abusive way.</li>
+                    <li>Foody may restrict or terminate access if these Terms are violated.</li>
+                </ul>
+            </section>
 
-    <div class="section">
-        <h2>2. Use of AI Services</h2>
-        <div class="disclaimer-box">
-            <h3>⚠️ IMPORTANT CULINARY DISCLAIMER</h3>
-            <p><strong>Foody uses Artificial Intelligence (AI) to generate recipes, cooking steps, and images.</strong></p>
-            <ul>
-                <li>AI-generated recipes are for <strong>informational and entertainment purposes only</strong>.</li>
-                <li>The AI may occasionally generate inaccurate ingredients, measurements, or cooking instructions.</li>
-                <li><strong>Allergy & Safety Warning:</strong> Users are solely responsible for verifying that ingredients are safe for their consumption, especially regarding allergies, dietary restrictions, and food safety (e.g., cooking temperatures).</li>
-                <li>Foody is not liable for any culinary failures, damaged equipment, or health issues resulting from the use of AI recipes.</li>
-            </ul>
+            <section>
+                <h2>3. AI Recipe Disclaimer</h2>
+                <div class="card warning">
+                    <h3>Important Safety Notice</h3>
+                    <p>
+                        Foody provides AI-powered recipe suggestions and generated content for informational purposes only.
+                    </p>
+                    <ul>
+                        <li>AI output may be incomplete, inaccurate, or unsuitable for your dietary needs.</li>
+                        <li>You are responsible for checking allergies, ingredient suitability, portion safety, cooking temperatures, and food handling requirements.</li>
+                        <li>Foody does not provide medical, allergy, or professional nutrition advice.</li>
+                        <li>You use AI-generated recipes at your own risk.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>4. User Content</h2>
+                <p>
+                    You are responsible for any content you submit through Foody, including recipes, comments, feedback, and reports.
+                </p>
+                <ul>
+                    <li>You must have the legal right to submit or share the content you upload or publish.</li>
+                    <li>You must not submit unlawful, abusive, infringing, misleading, or harmful content.</li>
+                    <li>If you make content public in Foody, you grant Foody a non-exclusive right to store, display, and distribute that content within the app.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>5. Images</h2>
+                <p>
+                    Foody does not collect personal images by default and does not require you to provide an image to use core app features.
+                </p>
+                <ul>
+                    <li>If you do not upload a profile image or recipe image, Foody does not ask you to provide one.</li>
+                    <li>If an image is supplied by your sign-in provider or voluntarily uploaded by you for a profile or recipe feature, Foody may process and display that image only for that feature.</li>
+                    <li>Foody does not claim ownership over images you voluntarily provide, but you must have the right to use and share them.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>6. Acceptable Use</h2>
+                <ul>
+                    <li>No illegal, fraudulent, abusive, or unauthorized use of Foody.</li>
+                    <li>No scraping, hacking, reverse engineering, or interference with the app or its backend services.</li>
+                    <li>No spam, fake reports, harmful content, or misuse of community features.</li>
+                    <li>No use of the app in a way that violates another person's rights.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>7. Third-Party Services</h2>
+                <p>
+                    Foody may depend on third-party services such as Google Sign-In, Firebase, AI processing services, and public recipe providers.
+                    Foody is not responsible for outages, content errors, or policy changes caused by those third-party services.
+                </p>
+            </section>
+
+            <section>
+                <h2>8. Intellectual Property</h2>
+                <ul>
+                    <li>The Foody name, branding, interface, and original app code remain the property of Foody or its licensors.</li>
+                    <li>Third-party names, logos, and datasets remain the property of their respective owners.</li>
+                    <li>Your use of Foody does not transfer any ownership rights in the app or its protected materials.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>9. Suspension and Termination</h2>
+                <p>
+                    Foody may suspend, limit, or terminate access to the app if we believe you violated these Terms,
+                    misused the service, or created risk for other users or the platform.
+                </p>
+            </section>
+
+            <section>
+                <h2>10. Limitation of Liability</h2>
+                <p>
+                    To the fullest extent permitted by law, Foody and its developers are not liable for indirect,
+                    incidental, special, or consequential damages arising from your use of the app, including inaccurate AI output,
+                    cooking failures, allergy-related harm, lost data, downtime, or third-party service failures.
+                </p>
+            </section>
+
+            <section>
+                <h2>11. Governing Law</h2>
+                <p>
+                    These Terms are governed by the laws of India.
+                </p>
+            </section>
+
+            <section>
+                <h2>12. Changes to These Terms</h2>
+                <p>
+                    Foody may update these Terms from time to time. The updated version will be posted with a revised effective date.
+                    Continued use of Foody after an update means the revised Terms apply.
+                </p>
+            </section>
+
+            <section>
+                <h2>13. Contact</h2>
+                <div class="card">
+                    <p><strong>Email:</strong> <a href="mailto:meettailor.dev@gmail.com">meettailor.dev@gmail.com</a></p>
+                    <p><strong>App:</strong> Foody</p>
+                </div>
+            </section>
+
+            <div class="footer">
+                <p>&copy; 2026 Foody. All rights reserved.</p>
+            </div>
         </div>
     </div>
-
-    <div class="section">
-        <h2>3. User Accounts</h2>
-        <p>You may be required to create an account to access certain features (e.g., saving favorites, AI generation). You are responsible for:</p>
-        <ul>
-            <li>Maintaining the confidentiality of your account credentials (managed via Clerk).</li>
-            <li>All activities that occur under your account.</li>
-            <li>Ensuring that the information you provide is accurate and up to date.</li>
-        </ul>
-        <p>We reserve the right to suspend or terminate accounts that violate these Terms.</p>
-    </div>
-
-    <div class="section">
-        <h2>4. Intellectual Property</h2>
-        <h3>Our Content</h3>
-        <p>The App including its design, logo, and original source code, is owned by the Foody Development Team and is protected by copyright laws.</p>
-        
-        <h3>Generated Recipes</h3>
-        <p>Recipes generated through the App are yours to use for personal purposes. If you choose to make a recipe "Public," you grant Foody a worldwide, royalty-free license to display and distribute that content to other users.</p>
-    </div>
-
-    <div class="section">
-        <h2>5. Prohibited Conduct</h2>
-        <p>You agree not to:</p>
-        <ul>
-            <li>Use the App for any illegal or unauthorized purpose.</li>
-            <li>Attempt to hack, decompile, or disrupt the App's infrastructure.</li>
-            <li>Use automated systems (bots, scrapers) to collect data from the App.</li>
-            <li>Submit content that is offensive, harmful, or violates others' rights.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>6. Termination</h2>
-        <p>We may terminate or suspend your access to the App immediately, without prior notice or liability, for any reason, including if you breach the Terms. Upon termination, your right to use the App will cease immediately.</p>
-    </div>
-
-    <div class="section">
-        <h2>7. Limitation of Liability</h2>
-        <p>To the maximum extent permitted by law, Foody and its developers shall not be liable for any indirect, incidental, special, or consequential damages resulting from your use of the App, including but not limited to culinary mishaps, data loss, or server downtime.</p>
-    </div>
-
-    <div class="section">
-        <h2>8. Governing Law</h2>
-        <p>These Terms shall be governed and construed in accordance with the laws of <strong>India</strong>, without regard to its conflict of law provisions.</p>
-    </div>
-
-    <div class="section">
-        <h2>9. Changes to Terms</h2>
-        <p>We reserve the right to modify these Terms at any time. We will notify users of any significant changes by updating the "Effective Date" or through an in-app notice. Continued use after changes means you accept the new Terms.</p>
-    </div>
-
-    <div class="section">
-        <h2>10. Contact Us</h2>
-        <p>If you have any questions about these Terms, please contact us at: <strong>meet321.dev@gmail.com</strong></p>
-    </div>
-
-    <div class="footer">
-        <p>© 2026 Foody. All Rights Reserved.</p>
-        <p>Developed with Passion by Foody Team | India</p>
-    </div>
-
-</div>
-
 </body>
 </html>
-
